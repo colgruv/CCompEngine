@@ -1,14 +1,16 @@
 #ifndef MATERIAL_H
 #define MATERIAL_H
 
-#include "texture.h"
-#include "material.h"
 #include "Dependencies\glew\glew.h"
 
 typedef struct MaterialData
 {
+	char* Name;
+	unsigned int AssetID;
 	GLuint ShaderProgramID;
-	GLuint* TextureIDs;
+	GLuint DiffuseTextureID;
+	GLuint NormalTextureID;
+	GLuint SpecularTextureID;
 } MaterialData;
 
 #endif

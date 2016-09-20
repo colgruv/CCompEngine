@@ -9,7 +9,9 @@
 
 typedef struct TextureData
 {
-
+	char* Name;
+	unsigned int AssetID;
+	GLuint TextureID;
 } TextureData;
 
 // Load a .BMP file using our custom loader

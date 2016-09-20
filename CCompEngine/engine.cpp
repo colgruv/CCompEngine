@@ -51,6 +51,8 @@ void renderScene()
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glClearColor(0.5f, 0.7f, 1.0f, 1.0f);
 
+
+
 	glutSwapBuffers();
 }
 
