@@ -7,6 +7,11 @@
 
 #include "Dependencies\glew\glew.h"
 
+typedef struct TextureData
+{
+
+} TextureData;
+
 // Load a .BMP file using our custom loader
 GLuint loadBMP_custom(const char * imagepath);
 

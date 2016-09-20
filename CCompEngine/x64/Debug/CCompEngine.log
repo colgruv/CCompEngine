@@ -1,0 +1,7 @@
+﻿  texture.cpp
+  shader.cpp
+  main.cpp
+  engine.cpp
+  Generating Code...
+LINK : fatal error LNK1104: cannot open file 'C:\Users\Colgruv\Documents\CCompEngine\packages\nupengl.core.0.1.0.1\build\native\../..//build/native/lib/x64\glew32.lib'
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(637,5): error MSB6006: "link.exe" exited with code 1104.

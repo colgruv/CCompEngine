@@ -5,6 +5,10 @@
 #include "material.h"
 #include "Dependencies\glew\glew.h"
 
-
+typedef struct MaterialData
+{
+	GLuint ShaderProgramID;
+	GLuint* TextureIDs;
+} MaterialData;
 
 #endif
