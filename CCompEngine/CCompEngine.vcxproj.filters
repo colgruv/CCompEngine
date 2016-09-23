@@ -25,24 +25,30 @@
     <Filter Include="Source Files\Utilities">
       <UniqueIdentifier>{258dbb03-c72a-4bd3-ab40-32568c7f9b45}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Components">
+      <UniqueIdentifier>{df83cfbf-035a-4ebe-a770-b609416bdad3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="texture.c">
-      <Filter>Source Files\AssetLibrary</Filter>
-    </ClCompile>
     <ClCompile Include="shader.cpp">
-      <Filter>Source Files\AssetLibrary</Filter>
-    </ClCompile>
-    <ClCompile Include="mesh.c">
       <Filter>Source Files\AssetLibrary</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="list.c">
+    <ClCompile Include="asset_library.cpp">
+      <Filter>Source Files\AssetLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>Source Files\AssetLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh.cpp">
+      <Filter>Source Files\AssetLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="list.cpp">
       <Filter>Source Files\Utilities</Filter>
     </ClCompile>
   </ItemGroup>
@@ -73,6 +79,18 @@
     </ClInclude>
     <ClInclude Include="list.h">
       <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="transform.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component_map.h">
+      <Filter>Header Files\Components</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

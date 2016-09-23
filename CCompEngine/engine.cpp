@@ -2,7 +2,7 @@
 #include <iostream>
 
 // Initialize OpenGL context
-void initEngine(int argc, char **argv)
+void initEngine(GameData &_data, int argc, char **argv)
 {
 	glutInit(&argc, argv);
 	
@@ -33,13 +33,15 @@ void initEngine(int argc, char **argv)
 	// Accept fragment if it closer to the camera than the former one
 	glDepthFunc(GL_LESS);
 
+	// Initialize asset library
+	initAssetLibrary(&_data.assets);
+
 	// Create and compile our GLSL program from the shaders
-	GLuint programID = LoadShaders("TransformVertexShader.vertexshader", "TextureFragmentShader.fragmentshader");
+	//GLuint programID = LoadShaders("TransformVertexShader.vertexshader", "TextureFragmentShader.fragmentshader");
 
 	// Get a handle for our "MVP" uniform
-	GLuint MatrixID = glGetUniformLocation(programID, "MVP");
-
-	
+	ShaderData *defaultShader = LIST_GET(_data.assets.shaders, ShaderData*, 0);
+	GLuint MatrixID = glGetUniformLocation(defaultShader->ShaderProgramID, "MVP");
 
 	// Register callbacks
 	glutDisplayFunc(renderScene);
@@ -52,7 +54,7 @@ void renderScene()
 	glClearColor(0.5f, 0.7f, 1.0f, 1.0f);
 
 
-
+	//glUniformMatrix4fv()
 	glutSwapBuffers();
 }
 
@@ -139,9 +141,9 @@ DisplaySettings loadOrCreateDisplaySettings(char *_filename)
 		} while (line[0] != '.');
 
 		// Deallocate buffers
-		free(line);
-		free(setting);
-		free(value);
+		//(line);
+		//free(setting);
+		//free(value);
 	}
 
 	return settings;

@@ -3,9 +3,14 @@
 
 typedef struct ActorData
 {
-	char* Name;
-	unsigned int ActorID;
-	bool IsActive;
+	// Actor Heading
+	char* name;
+	unsigned int actorID;
+	bool isActive;
+
+	// Node Navigation Information
+	ActorData* next;
+	ActorData* firstChild;
 } ActorData;
 
 #endif

@@ -13,6 +13,6 @@ typedef struct MeshData
 	GLuint UVBufferID;
 } MeshData;
 
-MeshData primitiveCube();
+MeshData createPrimitiveCube();
 
 #endif

@@ -2,7 +2,10 @@
 
 int main(int argc, char **argv)
 {
-	initEngine(argc, argv);
+	GameData data;
+
+	initEngine(data, argc, argv);
+
 	beginUpdate();
 
 	return 0;
