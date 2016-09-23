@@ -135,6 +135,7 @@
     <ClInclude Include="actor.h" />
     <ClInclude Include="asset_library.h" />
     <ClInclude Include="component_map.h" />
+    <ClInclude Include="Dependencies\glm\glm.hpp" />
     <ClInclude Include="engine.h" />
     <ClInclude Include="material.h" />
     <ClInclude Include="mesh.h" />

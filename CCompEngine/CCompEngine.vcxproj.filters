@@ -92,5 +92,8 @@
     <ClInclude Include="component_map.h">
       <Filter>Header Files\Components</Filter>
     </ClInclude>
+    <ClInclude Include="Dependencies\glm\glm.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

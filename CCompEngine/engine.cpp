@@ -44,6 +44,7 @@ void initEngine(GameData &_data, int argc, char **argv)
 	GLuint MatrixID = glGetUniformLocation(defaultShader->ShaderProgramID, "MVP");
 
 	// Register callbacks
+	// TODO: Maybe replace this with manual update calls?
 	glutDisplayFunc(renderScene);
 }
 
@@ -59,7 +60,7 @@ void renderScene()
 }
 
 // TODO: OpenGL Game Logic callback
-void updateScene()
+void updateScene(GameData &_data)
 {
 
 }

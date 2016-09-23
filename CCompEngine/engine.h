@@ -30,7 +30,7 @@ typedef struct DisplaySettings
 void initEngine(GameData &_data, int argc, char **argv);
 void beginUpdate();
 void renderScene();
-void updateScene();
+void updateScene(GameData &_data);
 
 // Engine I/O
 DisplaySettings loadOrCreateDisplaySettings(char *_filename);
